@@ -1,0 +1,254 @@
+:root {
+    /* fonts */
+    --second-font: "Raleway";
+
+    /* text colors */
+    --akcent-color: #2196F3;
+    --akcent-light-color: #FFFFFF;
+    --title-color: #212121;
+    --article-color: #757575;
+    --not-active-btm-color: #F5F4FA;
+    --baner-color: #2F303A;
+    /* bground colors */
+
+    /* others */
+
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--akcent-light-color);
+    color: var(--title-color);
+
+    width: 1600px;
+    height: 2349px;
+}
+
+.list {
+    list-style: none;
+}
+
+/* Site bottom bar */
+
+header a,
+footer a{
+    text-decoration: none;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+
+    letter-spacing: 0.03em;
+}
+
+/* Logo Web Studio */
+.first-side-logo,
+.second-side-logo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.first-side-logo{
+    color: var(--akcent-color);
+}
+.second-side-logo {
+    color: #292929;
+}
+
+.nav-item,
+.adress-item{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.02em;
+}
+
+.nav-item{
+    color: var(--title-color);
+}
+.header-studio,
+.header-portfolio{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.adress-item a{
+    color: var(--article-color);
+}
+
+.nav-item a:focus,
+.nav-item a:hover,
+.adress-item a:focus,
+.adress-item a:hover{
+    color: var(--akcent-color);
+}
+
+/* Site header banner */
+.baner{
+    background-color: var(--baner-color);
+
+    color: var(--akcent-light-color);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.baner-btn{
+    color: var(--akcent-light-color);
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    background: var(--akcent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+.baner-btn:focus,
+.baner-btn:hover{ 
+    background: #188CE8;
+}
+
+/* Our credo */
+.credo{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--title-color);
+}
+
+.credo-item>p{
+    font-weight: 400;
+    line-height: 1.71;
+    text-transform: none;
+
+    color: var(--article-color);
+}
+
+/* Our prifiles */
+
+
+/* Our team */
+.team{
+    background: #F5F4FA;
+}
+
+.worker{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+
+    letter-spacing: 0.03em;
+    background: var(--akcent-light-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.worker-name{
+    text-align: center;
+}
+.worker-position{
+    font-weight: 400;
+    color: var(--article-color);
+
+    text-align: center;
+}
+
+/* site footer */
+footer{
+    background-color: var(--baner-color);
+}
+
+footer .second-side-logo{
+    color: var(--akcent-light-color);
+}
+
+footer .adress-item a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-transform: none;
+
+    letter-spacing: 0.03em;
+}
+
+.google-adr a{
+    color: var(--akcent-light-color);
+}
+
+.mail-adr a,
+.tel-adr a{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* фильтр на странице Портфолио */
+.filter-btm{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-color);
+    background: var(--not-active-btm-color);
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.filter-item .btm-all{
+    color: var(--akcent-light-color);
+    background: var(--akcent-color);
+}
+
+/* набор карточек портфолио */
+.job-item{
+    background: var(--akcent-light-color);
+    border: 1px solid #EEEEEE;
+}
+
+.job-item-name{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+
+    letter-spacing: 0.06em;
+
+    color: var(--title-color);
+}
+
+.job-item-type{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+
+    letter-spacing: 0.03em;
+
+    color: var(--article-color);
+}
