@@ -1,6 +1,7 @@
 :root {
     /* fonts */
     --second-font: "Raleway";
+    --most-used-font-size:14px;
 
     /* text colors */
     --akcent-color: #2196F3;
@@ -15,14 +16,10 @@
 
 }
 
-
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: var(--akcent-light-color);
+    font-size: var(--most-used-font-size);
     color: var(--title-color);
-
-    width: 1600px;
-    height: 2349px;
 }
 
 .list {
@@ -31,8 +28,7 @@ body{
 
 /* Site bottom bar */
 
-header a,
-footer a{
+a{
     text-decoration: none;
 }
 
@@ -46,9 +42,8 @@ footer a{
 }
 
 /* Logo Web Studio */
-.first-side-logo,
-.second-side-logo{
-    font-family: 'Raleway';
+.logo{
+    font-family: var(--second-font),sans-serif;
     font-weight: 700;
     font-size: 26px;
     text-decoration: none;
@@ -66,34 +61,35 @@ footer a{
 .nav-item,
 .adress-item{
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.02em;
 }
 
-.nav-item{
+.nav-item .item-link{
     color: var(--title-color);
 }
-.header-studio,
-.header-portfolio{
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
 
-.adress-item a{
+.adress-item .item-link{
     color: var(--article-color);
 }
 
-.nav-item a:focus,
-.nav-item a:hover,
-.adress-item a:focus,
-.adress-item a:hover{
+.header-nav-list .current .item-link{
+    color: var(--akcent-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.nav-item .item-link:focus,
+.nav-item .item-link:hover,
+.adress-item .item-link:focus,
+.adress-item .item-link:hover {
     color: var(--akcent-color);
 }
 
 /* Site header banner */
 .baner{
     background-color: var(--baner-color);
-
+}
+/* .baner .baner-section{ */
+.baner-text{
     color: var(--akcent-light-color);
     font-style: normal;
     font-weight: 900;
@@ -125,18 +121,16 @@ footer a{
 }
 
 /* Our credo */
-.credo{
+.credo-item .credo-title{
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: var(--most-used-font-size);
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
-    color: var(--title-color);
 }
 
-.credo-item>p{
+.credo-item .credo-text{
     font-weight: 400;
     line-height: 1.71;
     text-transform: none;
@@ -153,24 +147,26 @@ footer a{
 }
 
 .worker{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-
-    letter-spacing: 0.03em;
     background: var(--akcent-light-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
 .worker-name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+
+    letter-spacing: 0.03em;
     text-align: center;
 }
 .worker-position{
+    font-style: normal;
     font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
     color: var(--article-color);
-
     text-align: center;
 }
 
@@ -186,19 +182,18 @@ footer .second-side-logo{
 footer .adress-item a{
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
     text-transform: none;
 
     letter-spacing: 0.03em;
 }
 
-.google-adr a{
+.google-adr .item-link{
     color: var(--akcent-light-color);
 }
 
-.mail-adr a,
-.tel-adr a{
+.mail-adr .item-link,
+.tel-adr .item-link{
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -220,7 +215,8 @@ footer .adress-item a{
     cursor: pointer;
 }
 
-.filter-item .btm-all{
+.filter-btm:hover,
+.filter-btm:focus{
     color: var(--akcent-light-color);
     background: var(--akcent-color);
 }
